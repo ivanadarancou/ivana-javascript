@@ -17,23 +17,21 @@
 
   <script>
     function makeBetterName() {
-      // Get the values from the form inputs
+      
       let fName = document.getElementById("first").value;
       let mName = document.getElementById("middle").value;
       let lName = document.getElementById("last").value;
 
-      // If middle name has only one letter, add a period
+      
       if (mName.length === 1) {
         mName = mName + ".";
       }
 
-      // Construct the full name
+      
       let fullName = fName + " " + mName + " " + lName;
 
-      // Log the full name to the console
       console.log(fullName);
 
-      // Display the full name in the webpage
       document.getElementById("nameHead").innerHTML = fullName;
     }
   </script>
